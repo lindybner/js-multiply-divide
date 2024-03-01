@@ -25,7 +25,7 @@ window.onload = () => {
     }
 
     // process multiply click
-    const processMultiply = event => {
+    const clickMultiply = event => {
         // prevent form submission
         event.preventDefault();
 
@@ -41,7 +41,7 @@ window.onload = () => {
     }
 
     // process divide click
-    const processDivide = event => {
+    const clickDivide = event => {
         // prevent form submission
         event.preventDefault();
 
@@ -58,8 +58,8 @@ window.onload = () => {
 
     // EVENT LISTENERS
     // multiply
-    btnMultiply.addEventListener("click", processMultiply);
+    btnMultiply.addEventListener("click", clickMultiply);
 
     // divide
-    btnDivide.addEventListener("click", processDivide);
+    btnDivide.addEventListener("click", clickDivide);
 }
