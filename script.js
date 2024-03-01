@@ -18,9 +18,8 @@ function divide(numOne, numTwo) {
     return result;
 }
 
-// EVENT LISTENERS
-// multiply
-btnMultiply.addEventListener("click", function () {
+// process multiply click
+function processMultiply() {
     // prevent form submission
     event.preventDefault();
 
@@ -33,10 +32,10 @@ btnMultiply.addEventListener("click", function () {
     
     // output result
     resultOutput.innerHTML = result;
-})
+}
 
-// divide
-btnDivide.addEventListener("click", function () {
+// process divide click
+function processDivide() {
     // prevent form submission
     event.preventDefault();
 
@@ -49,4 +48,11 @@ btnDivide.addEventListener("click", function () {
 
     // output result
     resultOutput.innerHTML = result;
-})
+}
+
+// EVENT LISTENERS
+// multiply
+btnMultiply.addEventListener("click", processMultiply);
+
+// divide
+btnDivide.addEventListener("click", processDivide);
