@@ -7,6 +7,11 @@ window.onload = () => {
     const resultOutput = document.querySelector("#result-output");
 
     // FUNCTIONS
+    // output result
+    const outputResult = result => {
+        resultOutput.innerHTML = result;
+    }
+
     // multiply
     const multiply = (numOne, numTwo) => {
         result = numOne * numTwo;
@@ -32,7 +37,7 @@ window.onload = () => {
         let result = multiply(numOne, numTwo);
         
         // output result
-        resultOutput.innerHTML = result;
+        outputResult(result);
     }
 
     // process divide click
@@ -48,7 +53,7 @@ window.onload = () => {
         let result = divide(numOne, numTwo);
 
         // output result
-        resultOutput.innerHTML = result;
+        outputResult(result);
     }
 
     // EVENT LISTENERS
