@@ -5,7 +5,20 @@ const btnMultiply = document.querySelector("#btn-multiply");
 const btnDivide = document.querySelector("#btn-divide");
 const resultOutput = document.querySelector("#result-output");
 
-// EVENT LISTENERS & FN
+// FUNCTIONS
+// multiply
+function multiply(numOne, numTwo) {
+    result = numOne * numTwo;
+    return result;
+}
+
+// divide
+function divide(numOne, numTwo) {
+    result = numOne / numTwo;
+    return result;
+}
+
+// EVENT LISTENERS
 // multiply
 btnMultiply.addEventListener("click", function () {
     // prevent form submission
@@ -16,7 +29,7 @@ btnMultiply.addEventListener("click", function () {
     let numTwo = parseFloat(numTwoInput.value);
     
     // multiply
-    let result = numOne * numTwo;
+    let result = multiply(numOne, numTwo);
     
     // output result
     resultOutput.innerHTML = result;
@@ -32,7 +45,7 @@ btnDivide.addEventListener("click", function () {
     let numTwo = parseFloat(numTwoInput.value);
 
     // divide
-    let result = numOne / numTwo;
+    let result = divide(numOne, numTwo);
 
     // output result
     resultOutput.innerHTML = result;
