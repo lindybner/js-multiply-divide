@@ -11,7 +11,7 @@
         Execise: Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).
     </p>
 
-    <form action="" method="get">
+    <form method="get">
         <!-- First number -->
         <div>
             <label for="num-1">First Number:</label>
@@ -28,13 +28,19 @@
         </div>
         <!-- Two buttons: Multiply / Divide-->
         <div>
-            <button id="btn-multiply">Multiply</button>
-            <button id="btn-divide">Divide</button>
+            <button type="submit" id="btn-multiply">
+                Multiply
+            </button>
+            <button type="submit" id="btn-divide">
+                Divide
+            </button>
         </div>
         <!-- Result output -->
         <div>
             The Result is:
-            <span id="result-output"></span>
+            <div>
+                <span id="result-output"></span>
+            </div>
         </div>
     </form>
 
